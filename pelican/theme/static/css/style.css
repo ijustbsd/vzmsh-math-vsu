@@ -44,6 +44,11 @@ nav {
     font-weight: bold;
 }
 
+a.dropdown-item:active {
+    color: #3f7baa;
+    background: transparent;
+}
+
 @media (min-width: 992px) {
     .site-name {
         display: none;
