@@ -1,0 +1,7 @@
+version: "3"
+services:
+  pelican:
+    build: .
+    volumes:
+      - ./pelican:/pelican
+      - ./output:/pelican/output
