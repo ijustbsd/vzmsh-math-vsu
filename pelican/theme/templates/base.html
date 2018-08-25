@@ -36,7 +36,7 @@
                                 {% for p in pages %}
                                 {% if p.parent == 'Yes' %}
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="{{ p.url }}" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ p.title }}</a>
+                                    <a class="nav-link dropdown-toggle{% if p == page %} active{% endif %}" href="{{ p.url }}" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ p.title }}</a>
                                     <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
                                         {% for children in pages if children.parent == p.slug %}
                                         <a class="dropdown-item" href="{{ children.url }}">{{ children.title }}</a>
