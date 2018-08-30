@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
+{% block og %}
+<meta property="og:title" content="{{ page.title }} | {{ SITENAME.short }} {{ YEAR }}">
+<meta property="og:description" content="{{ DESCRIPTION }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://{{ SITEURL }}/{{ page.url }}">
+<meta property="og:site_name" content="{{ SITENAME.full }} {{ YEAR }}">
+<meta property="og:image" content="https://{{ SITEURL }}/theme/images/logo.png">
+{% endblock %}
+
 {% block title %}{{ page.title }} | {{ super() }}{% endblock %}
 
 {% block css %}

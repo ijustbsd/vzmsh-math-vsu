@@ -10,6 +10,8 @@
 
         <meta name="author" content="{{ AUTHOR }}">
 
+        {% block og %}{% endblock %}
+
         <title>{% block title %}{{ SITENAME.short }} {{ YEAR }}{% endblock %}</title>
 
         <link rel="icon" href="../theme/images/logo.png" type="image/png">
