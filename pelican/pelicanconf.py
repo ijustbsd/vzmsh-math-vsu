@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*- #
+import csv
 from os import listdir
 
 SITENAME = {
@@ -25,6 +26,11 @@ STATIC_PATHS = ['files', 'albums']
 PHOTOS = []
 for year in listdir('content/albums'):
     PHOTOS.append((year, listdir('content/albums/' + year)))
+
+PARTICIPANTS = []
+with open('participants.csv', encoding="utf-8") as csvfile:
+    reader = csv.reader(csvfile)
+    PARTICIPANTS = enumerate(tuple(reader), 1)
 
 # Disable generations some files
 ARCHIVES_SAVE_AS = None

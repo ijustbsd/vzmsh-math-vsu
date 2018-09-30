@@ -73,6 +73,7 @@
 
             <div class="row content">
                 <!-- Page content -->
+                {% block main_row %}
                 <div class="col-lg-8">
                 {% block content %}{% endblock %}
                 </div>
@@ -81,6 +82,7 @@
                 <div class="col-lg-4">
                 {% include 'sidebar.html' %}
                 </div>
+                {% endblock %}
             </div>
 
             <!-- Footer -->

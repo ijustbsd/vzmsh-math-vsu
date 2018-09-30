@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block og %}
+<meta property="og:title" content="{{ page.title }} | {{ SITENAME.short }} {{ YEAR }}">
+<meta property="og:description" content="{{ DESCRIPTION }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://{{ SITEURL }}/{{ page.url }}">
+<meta property="og:site_name" content="{{ SITENAME.full }} {{ YEAR }}">
+<meta property="og:image" content="https://{{ SITEURL }}/theme/images/logo.png">
+{% endblock %}
+
+{% block title %}{{ page.title }} | {{ super() }}{% endblock %}
+
+{% block main_row %}
+<div class="col-lg-12">
+    <h1>{{ page.title }}</h1>
+    <table class="table table-bordered table-hover table-responsive">
+        <thead>
+            <tr>
+                <th scope="col">№</th>
+                <th scope="col">Фамилия</th>
+                <th scope="col">Имя</th>
+                <th scope="col">Отчество</th>
+                <th scope="col">Город</th>
+                <th scope="col">Название доклада</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for num, x in PARTICIPANTS %}
+            <tr>
+                <th scope="row">{{ num }}</th>
+                <td>{{ x[0] }}</td>
+                <td>{{ x[1] }}</td>
+                <td>{{ x[2] }}</td>
+                <td>{{ x[3] }}</td>
+                <td>{{ x[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
