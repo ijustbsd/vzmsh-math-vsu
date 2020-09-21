@@ -2,5 +2,3 @@
 __pycache__
 .vscode
 output
-data.csv
-formatter.py
