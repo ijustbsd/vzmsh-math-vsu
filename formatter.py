@@ -7,7 +7,9 @@ OUTPUT_CSV = 'pelican/participants.csv'
 def str_formatter(x):
     extra = {
         'нет': '-',
-        '': '-'
+        '': '-',
+        ' ': '-',
+        'без доклада': '-'
     }
     # делаем замены некоторых строк фиксированными значениями
     if x in extra:
