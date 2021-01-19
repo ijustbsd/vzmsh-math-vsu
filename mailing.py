@@ -1,5 +1,6 @@
 import csv
 import json
+import logging
 import os
 
 import requests
@@ -10,11 +11,13 @@ MAILGUN_API_KEY = os.getenv('MAILGUN_API_KEY')
 
 
 def udpate_mailing_list(mailing_list):
-    return requests.post(
+    response = requests.post(
         f'https://api.mailgun.net/v3/lists/{LIST_ADDRESS}/members.json',
         auth=('api', MAILGUN_API_KEY),
         data={'upsert': True, 'members': json.dumps(mailing_list)}
     )
+    if response.status_code != 200:
+        logging.error('Update mailing list error:\n' + response.text)
 
 
 def main():
