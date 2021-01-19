@@ -59,6 +59,10 @@ a.dropdown-item:active {
     background: #fff;
 }
 
+.content {
+    text-align: justify;
+}
+
 @media (min-width: 576px) {
     .container {
         border-top: 2px solid #3f7baa;
