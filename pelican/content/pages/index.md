@@ -53,4 +53,6 @@ save_as: index.html
 
 [Сборник материалов конференции 2019 года (.pdf)](files/vzmsh2019.pdf)
 
+[Сборник материалов конференции 2021 года (.pdf)](files/vzmsh2021.pdf)
+
 Дополнительную информацию можно получить по E-mail: [vzmsh@mail.ru](mailto:vzmsh@mail.ru)
