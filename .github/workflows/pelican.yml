@@ -17,8 +17,6 @@ jobs:
         env:
           GDRIVE_DOCUMENT_ID: ${{ secrets.GDRIVE_DOCUMENT_ID }}
           GDRIVE_SHEET_ID: ${{ secrets.GDRIVE_SHEET_ID }}
-          LIST_ADDRESS: ${{ secrets.LIST_ADDRESS }}
-          MAILGUN_API_KEY: ${{ secrets.MAILGUN_API_KEY }}
 
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
