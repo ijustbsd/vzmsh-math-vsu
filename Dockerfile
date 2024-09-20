@@ -5,8 +5,8 @@ COPY exec.sh /exec.sh
 RUN \
     chmod +x /exec.sh && \
     apk add --update --no-cache python3 curl cmd:pip3 && \
-    pip3 install --upgrade pip && \
-    pip3 install pelican markdown && \
+    pip3 install --break-system-packages --upgrade pip && \
+    pip3 install --break-system-packages pelican markdown && \
     rm -rf /var/cache/apk/*
 
 CMD ["/exec.sh"]
