@@ -3,7 +3,6 @@ import json
 
 INPUT_CSV = 'data.csv'
 OUTPUT_CSV = 'pelican/participants.csv'
-MEMBERS_JSON = 'members.json'
 
 
 def str_formatter(x):
@@ -45,12 +44,3 @@ with open(OUTPUT_CSV, 'w') as csvfile:
     writer = csv.writer(csvfile)
     for x in result:
         writer.writerow(x)
-
-# достаём email'ы для рассылки
-with open(INPUT_CSV) as csvfile:
-    reader = csv.DictReader(csvfile)
-    next(reader)
-    mailing_list = [{'address': row['E-mail:']} for row in reader]
-
-with open(MEMBERS_JSON, 'w') as f:
-    json.dump(mailing_list, f)
