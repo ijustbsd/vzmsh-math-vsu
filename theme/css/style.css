@@ -115,3 +115,9 @@ footer {
     border: 1px solid #000;
     padding: 1px;
 }
+
+video {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
