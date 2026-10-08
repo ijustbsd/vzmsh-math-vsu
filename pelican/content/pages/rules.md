@@ -11,7 +11,7 @@ ShowTitle: 0
 
 [Образец оформления тезисов и стилевой файл (.zip)](files/tezis.zip)
 
-Электронную версию тезисов необходимо выслать нам по e-mail: [vzmsh@mail.ru](mailto:vzmsh@mail.ru)!
+Электронную версию тезисов необходимо выслать нам по e-mail: [vzmsh@internet.ru](mailto:vzmsh@internet.ru)!
 
 #Правила оформления статей в «Итоги науки и техники»
 
@@ -19,4 +19,4 @@ ShowTitle: 0
 
 [Правила оформления статей, стилевой файл и образец статьи (.zip)](files/Instruction.zip)
 
-Статьи (**tex-** и **pdf-** файлы) необходимо выслать нам по e-mail: [vzmsh@mail.ru](mailto:vzmsh@mail.ru)!
+Статьи (**tex-** и **pdf-** файлы) необходимо выслать нам по e-mail: [vzmsh@internet.ru](mailto:vzmsh@internet.ru)!

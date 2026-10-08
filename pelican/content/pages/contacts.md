@@ -25,4 +25,4 @@ Order: 6
 ОКТМО 20701000  
 ОГРН 1023601560510  
 
-**E-mail:** [vzmsh@mail.ru](mailto:vzmsh@mail.ru)
+**E-mail:** [vzmsh@internet.ru](mailto:vzmsh@internet.ru)
