@@ -31,7 +31,7 @@ with open(INPUT_CSV) as csvfile:
     next(reader)
     for row in reader:
         # фамилия, имя, отчество, город, тема доклада
-        result.append([row[1], row[2], row[3], row[4], row[11]])
+        result.append([row[1], row[2], row[3], row[4], row[10]])
 # форматируем каждый столбец в строке
 result = [tuple(map(str_formatter, x)) for x in result]
 # убираем дубликаты
