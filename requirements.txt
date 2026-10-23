@@ -1,5 +1,5 @@
 blinker==1.4
-certifi==2021.5.30
+certifi==2026.10.19
 charset-normalizer==2.0.6
 docutils==0.17.1
 feedgenerator==1.9.2
